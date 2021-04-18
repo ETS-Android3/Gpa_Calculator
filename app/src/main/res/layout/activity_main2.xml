@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/f12">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:textAlignment="center"
+            android:background="@drawable/border"
+            android:id="@+id/old_c"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="الساعات التراكمية السابقة"
+            android:textColorHint="@color/hintee"
+            android:fontFamily="@font/a1_bold"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:inputType="number"
+            />
+
+
+        <EditText
+            android:id="@+id/old_gpa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:fontFamily="@font/a1_bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:hint="المعدل التراكمي السابق"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintee"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:background="@drawable/strok"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+
+        <TextView
+            android:fontFamily="@font/a1_bold"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="ساعات المادة"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/yellow"
+            android:inputType="number"
+            />
+
+
+        <TextView
+            android:fontFamily="@font/a1_bold"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="درجة المادة"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/yellow"
+            android:inputType="numberDecimal"
+            />
+        <TextView
+            android:fontFamily="@font/a1_bold"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="المادة"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/yellow"
+            android:inputType="numberDecimal"
+            />
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c1_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c1_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 1 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c2_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c2_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 2 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c3_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c3_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 3 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c4_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c4_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 4 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c5_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c5_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 5 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c6_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c6_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 6 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c7_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c7_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 7 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c8_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c8_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 8 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c9_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c9_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 9 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c10_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c10_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 10 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c11_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c11_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 11 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c12_c"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="عدد الساعات"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:backgroundTint="@color/black"
+                    android:inputType="number"
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:id="@+id/c12_g"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:hint="@string/takhader"
+                    android:textColor="@color/blackr"
+                    android:textSize="@dimen/_17ssp"
+                    android:layout_margin="5dp"/>
+
+
+
+
+                <TextView
+                    android:fontFamily="@font/a1_bold"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="المادة 12 :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:background="@drawable/border"
+            android:fontFamily="@font/a1_bold"
+            android:id="@+id/tracome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20ssp"
+            android:hint="المعدل التراكمي"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_margin="5dp"/>
+
+
+        <TextView
+            android:background="@drawable/border"
+            android:fontFamily="@font/a1_bold"
+            android:id="@+id/fasle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="المعدل الفصلي"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:background="@drawable/border"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="50dp"
+            android:text="امسح"
+            android:layout_margin="5dp"
+            android:onClick="clear"/>
+
+
+        <Button
+            android:background="@drawable/border"
+            android:fontFamily="@font/a1_bold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/black"
+            android:text="احسب"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:onClick="calc"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

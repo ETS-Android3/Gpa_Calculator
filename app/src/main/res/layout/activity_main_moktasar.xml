@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/f12"
+    >
+
+
+    <include layout="@layout/toolbar"/>
+
+
+    <EditText
+        android:id="@+id/tracome_g_et"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/a1_bold"
+        android:background="@drawable/border2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="ادخل معدلك التراكمي السابق"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/_25ssp"/>
+
+
+    <EditText
+        android:id="@+id/tracome_c_et"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/a1_bold"
+        android:background="@drawable/border2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="ادخل ساعاتك التراكمية"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="@dimen/_25ssp"/>
+
+    <EditText
+        android:id="@+id/faslee_g_et"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/a1_bold"
+        android:background="@drawable/border2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="ادخل معدلك الفصلي"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/_25ssp"/>
+
+
+    <EditText
+        android:id="@+id/fasel_c_et"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/a1_bold"
+        android:background="@drawable/border2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="ادخل مجموع ساعات الفصل"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="@dimen/_25ssp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:background="@drawable/border2"
+            android:id="@+id/new_c_tv"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/a1_bold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="ساعاتك التراكمية الجديدة"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="@dimen/_15ssp"/>
+
+
+        <TextView
+            android:id="@+id/new_tracome_tv"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/a1_bold"
+            android:background="@drawable/border2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:hint="معدلك التراكمي الجديد"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="@dimen/_15ssp"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+
+    <ImageButton
+        android:background="@drawable/border"
+        android:src="@drawable/ic_baseline_delete_forever_24"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="50dp"
+        android:text="امسح"
+        android:layout_margin="5dp"
+        android:onClick="delete"/>
+
+
+    <Button
+        android:layout_margin="5dp"
+        android:fontFamily="@font/a1_bold"
+        android:background="@drawable/border2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:text="احسب"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="@dimen/_18ssp"
+        android:onClick="calculate"/>
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>
