@@ -10,8 +10,8 @@ android {
         applicationId "com.omarstudiolimited.gpa_calculator"
         minSdkVersion 23
         targetSdkVersion 30
-        versionCode 2
-        versionName "2"
+        versionCode 4
+        versionName "4"
         setProperty("archivesBaseName", "GPA Calculator")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

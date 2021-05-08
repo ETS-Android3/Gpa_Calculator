@@ -232,10 +232,20 @@ public class MainActivity2 extends AppCompatActivity {
 
             tracome.setText("التراكمي الجديد" + "\n" + cum_format + "%");
             fasle.setText("معدلك الفصلي" + "\n" + final_format + "%");
-            Toast.makeText(getApplicationContext(), "ساعاتك التراكمية الجديدة "+allCredits.intValue(), Toast.LENGTH_LONG).show();
+//            Toast.makeText(getApplicationContext(), "ساعاتك التراكمية الجديدة "+allCredits.intValue(), Toast.LENGTH_LONG).show();
+
+            if(Double.isNaN(cum)){
+                tracome.setText("");
+                fasle.setText("");
+                Toast.makeText(getApplicationContext(), "الرجاء ادخال تفاصيل الساعات الجديدة وليس فقط المعلومات القديمة", Toast.LENGTH_SHORT).show();
+            }
+            if(tracome.length()>0){
+                Toast.makeText(getApplicationContext(), "ساعاتك التراكمية الجديدة "+allCredits.intValue(), Toast.LENGTH_LONG).show();
+            }
+
 
         } catch (NumberFormatException e) {
-            Toast.makeText(getApplicationContext(), "الرجاء قم بادخال معدلك التراكمي السابق بالأضافة الى الساعات التراكمية السابقة", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "الرجاء قم بادخال معدلك التراكمي السابق بالأضافة الى الساعات التراكمية السابقة وتفاصيل الساعات الجديدة", Toast.LENGTH_LONG).show();
         }
 
     }//calc void end

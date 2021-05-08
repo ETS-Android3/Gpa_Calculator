@@ -227,6 +227,18 @@ public class Main_fasle extends AppCompatActivity {
 
             fasle.setText("معدلك الفصلي" + "\n" + final_format + "%");
 
+            if (Double.isNaN(finaal)) {
+
+                Toast.makeText(getApplicationContext(), "يرجي ادخل معطيات صحيحة", Toast.LENGTH_SHORT).show();
+                fasle.setText("");
+
+            }
+
+
+
+
+//            fasle.setText("معدلك الفصلي" + "\n" + final_format + "%");
+
         } catch (NumberFormatException e) {
             Toast.makeText(getApplicationContext(), "حدث خطاء", Toast.LENGTH_SHORT).show();
         }
