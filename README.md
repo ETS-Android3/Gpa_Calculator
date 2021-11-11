@@ -1,4 +1,4 @@
-# Gpa_Calculator_android_Application
+# Gpa_Calculator_Android_Application
 
 ![](pics/a1.png)
 
